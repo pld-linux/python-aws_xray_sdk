@@ -7,14 +7,14 @@
 Summary:	AWS X-Ray SDK for Python 2
 Summary(pl.UTF-8):	SDK AWS X-Ray dla Pythona 2
 Name:		python-aws_xray_sdk
-Version:	2.6.0
+# keep 2.12.0 here for python2 support
+Version:	2.12.0
 Release:	1
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/aws-xray-sdk/
 Source0:	https://files.pythonhosted.org/packages/source/a/aws-xray-sdk/aws-xray-sdk-%{version}.tar.gz
-# Source0-md5:	0dde2a6df0c1ce452d6fff5ea485a376
-Patch0:		%{name}-future.patch
+# Source0-md5:	8a23112622f8e26e85ea134aad2bcfba
 URL:		https://pypi.org/project/aws-xray-sdk/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
@@ -68,7 +68,6 @@ emitować z aplikacji informacje do usługi AWS X-Ray.
 
 %prep
 %setup -q -n aws-xray-sdk-%{version}
-%patch0 -p1
 
 %build
 %if %{with python2}
