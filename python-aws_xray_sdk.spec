@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	SDK AWS X-Ray dla Pythona 2
 Name:		python-aws_xray_sdk
 # keep 2.12.0 here for python2 support
 Version:	2.12.0
-Release:	2
+Release:	3
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/aws-xray-sdk/
